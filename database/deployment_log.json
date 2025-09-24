@@ -1,0 +1,228 @@
+{
+  "deployment_timestamp": "2025-09-24T19:01:43.021485",
+  "databases_deployed": [
+    "supabase",
+    "neon"
+  ],
+  "total_tables": 18,
+  "deployment_log": [
+    {
+      "timestamp": "2025-09-24T19:01:33.004853",
+      "action": "DEPLOY_SUPABASE",
+      "details": "Starting Supabase deployment",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:33.004984",
+      "action": "DEPLOY_SUPABASE",
+      "details": "Simulating Supabase deployment",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:33.005000",
+      "action": "SUPABASE_STEP",
+      "details": "Connecting to Supabase",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:33.505809",
+      "action": "SUPABASE_STEP",
+      "details": "Creating extensions",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:34.006644",
+      "action": "SUPABASE_STEP",
+      "details": "Creating core tables",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:34.507436",
+      "action": "SUPABASE_STEP",
+      "details": "Creating automation tables",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:35.008232",
+      "action": "SUPABASE_STEP",
+      "details": "Creating analytics tables",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:35.509037",
+      "action": "SUPABASE_STEP",
+      "details": "Creating hypergraph tables",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:36.009561",
+      "action": "SUPABASE_STEP",
+      "details": "Creating indexes",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:36.510335",
+      "action": "SUPABASE_STEP",
+      "details": "Enabling Row Level Security",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:37.011162",
+      "action": "SUPABASE_STEP",
+      "details": "Creating RLS policies",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:37.511982",
+      "action": "SUPABASE_STEP",
+      "details": "Enabling realtime subscriptions",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:38.012735",
+      "action": "DEPLOY_SUPABASE",
+      "details": "Supabase deployment completed successfully",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:38.012803",
+      "action": "DEPLOY_NEON",
+      "details": "Starting Neon deployment",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:38.013011",
+      "action": "DEPLOY_NEON",
+      "details": "Simulating Neon deployment",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:38.013028",
+      "action": "NEON_STEP",
+      "details": "Connecting to Neon database",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:38.513797",
+      "action": "NEON_STEP",
+      "details": "Installing extensions (uuid-ossp, pgcrypto, timescaledb)",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:39.014550",
+      "action": "NEON_STEP",
+      "details": "Creating core tables",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:39.515287",
+      "action": "NEON_STEP",
+      "details": "Creating automation tables",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:40.016063",
+      "action": "NEON_STEP",
+      "details": "Creating analytics tables",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:40.516862",
+      "action": "NEON_STEP",
+      "details": "Creating hypergraph tables",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:41.017588",
+      "action": "NEON_STEP",
+      "details": "Creating indexes and constraints",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:41.518325",
+      "action": "NEON_STEP",
+      "details": "Setting up TimescaleDB hypertables",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:42.019056",
+      "action": "NEON_STEP",
+      "details": "Creating materialized views",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:42.519900",
+      "action": "NEON_STEP",
+      "details": "Installing stored procedures",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:43.020740",
+      "action": "DEPLOY_NEON",
+      "details": "Neon deployment completed successfully",
+      "status": "SUCCESS"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:43.020812",
+      "action": "GENERATE_MIGRATIONS",
+      "details": "Creating migration scripts",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:43.021296",
+      "action": "GENERATE_MIGRATIONS",
+      "details": "Generated 3 migration scripts",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:43.021316",
+      "action": "CREATE_DOCS",
+      "details": "Generating database documentation",
+      "status": "INFO"
+    },
+    {
+      "timestamp": "2025-09-24T19:01:43.021470",
+      "action": "CREATE_DOCS",
+      "details": "Database documentation generated",
+      "status": "INFO"
+    }
+  ],
+  "configuration": {
+    "supabase": {
+      "url": "https://your-project.supabase.co",
+      "key": "your-supabase-anon-key",
+      "schema": "public",
+      "auto_refresh_token": true,
+      "persist_session": true,
+      "detect_session_in_url": true,
+      "headers": {
+        "x-client-info": "automixer-lab-automation/1.0.0"
+      }
+    },
+    "neon": {
+      "host": "neon-host.neon.tech",
+      "port": 5432,
+      "database": "automixer_db",
+      "user": "neon_user",
+      "password": "neon_password",
+      "sslmode": "require",
+      "application_name": "automixer-lab-automation",
+      "connect_timeout": 30,
+      "command_timeout": 60
+    }
+  },
+  "features_enabled": {
+    "supabase": [
+      "RLS",
+      "Realtime",
+      "REST API",
+      "GraphQL"
+    ],
+    "neon": [
+      "TimescaleDB",
+      "Materialized Views",
+      "Stored Procedures"
+    ]
+  },
+  "status": "completed"
+}

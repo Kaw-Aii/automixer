@@ -1,35 +1,88 @@
 """
-Automixer: AI-Driven Digital Twin for Skincare Manufacturing Optimization
-
-Complete Laboratory Automation Solution for Skincare Manufacturing
-Connecting Digital Twin to Physical Equipment for Fully Automated Sample Production
-
-Features:
-✅ Recipe Management: Scalable formulations with automatic optimization
-✅ Quality Control Integration: Real-time monitoring and adjustment
-✅ Resource Scheduling: Intelligent equipment and material allocation
-✅ Batch Tracking: Complete traceability from raw materials to finished products
-✅ Digital Twin Interface: Real-time connection to physical equipment
+Automixer - AI-Driven Digital Twin for Skincare Manufacturing Optimization
+Enhanced with advanced simulation, AI optimization, and hardware integration
 """
 
-__version__ = "0.1.0"
-__author__ = "Automixer Team"
-__license__ = "AGPL-3.0"
+# Core models and functionality
+from .core.models import (
+    Recipe, Ingredient, Equipment, Batch, QualityCheck,
+    DigitalTwinState, OptimizationResult
+)
 
-# Import core modules
-from .core.models import *
+# Recipe management
 from .recipe.manager import RecipeManager
+
+# Quality control
 from .quality.monitor import QualityControlMonitor
+
+# Resource scheduling
 from .scheduling.scheduler import ResourceScheduler
+
+# Batch tracking
 from .tracking.tracker import BatchTracker
-from .digital_twin.interface import DigitalTwinInterface
-from .config.settings import settings
+
+# Enhanced digital twin interface
+from .digital_twin.interface import DigitalTwinInterface, EnhancedDigitalTwinInterface
+
+# Advanced simulation engine
+from .simulation import (
+    SkincareSimulationEngine, VesselSimulation, 
+    MolecularInteractionEngine, ProcessOptimizer
+)
+
+# AI chemist system
+from .ai_chemist import (
+    MasterCoordinatorAgent, FormulationOptimizerAgent,
+    QualityPredictorAgent, AIChemistSystem
+)
+
+# Hardware communication
+from .hardware import (
+    HardwareDeviceManager, ModbusProtocol, OPCUAProtocol,
+    SerialProtocol, HTTPProtocol
+)
+
+# Safety systems
+from .safety import (
+    SafetySystemManager, EmergencyShutdownSystem,
+    ProcessControlSystem, AlarmManager, PredictiveSafetyAnalytics
+)
+
+# Automated workflows
+from .workflows import (
+    WorkflowEngine, RecipeExecutor, QualityController,
+    ResourceOptimizer, BatchProcessor
+)
+
+__version__ = "2.0.0"
+__author__ = "Automixer Development Team"
 
 __all__ = [
-    "RecipeManager",
-    "QualityControlMonitor", 
-    "ResourceScheduler",
-    "BatchTracker",
-    "DigitalTwinInterface",
-    "settings",
+    # Core models
+    "Recipe", "Ingredient", "Equipment", "Batch", "QualityCheck",
+    "DigitalTwinState", "OptimizationResult",
+    
+    # Core functionality
+    "RecipeManager", "QualityControlMonitor", "ResourceScheduler", 
+    "BatchTracker", "DigitalTwinInterface", "EnhancedDigitalTwinInterface",
+    
+    # Advanced simulation
+    "SkincareSimulationEngine", "VesselSimulation", 
+    "MolecularInteractionEngine", "ProcessOptimizer",
+    
+    # AI chemist
+    "MasterCoordinatorAgent", "FormulationOptimizerAgent",
+    "QualityPredictorAgent", "AIChemistSystem",
+    
+    # Hardware communication
+    "HardwareDeviceManager", "ModbusProtocol", "OPCUAProtocol",
+    "SerialProtocol", "HTTPProtocol",
+    
+    # Safety systems
+    "SafetySystemManager", "EmergencyShutdownSystem",
+    "ProcessControlSystem", "AlarmManager", "PredictiveSafetyAnalytics",
+    
+    # Automated workflows
+    "WorkflowEngine", "RecipeExecutor", "QualityController",
+    "ResourceOptimizer", "BatchProcessor"
 ]
